@@ -31,7 +31,7 @@ body {
   background-color: #FFFFFF;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
+  box-shadow: 4px 4px 3px -2px rgba(20%,20%,40%,0.5);
 }
 
 .anchor-parent{
@@ -43,6 +43,15 @@ body {
   top: -60px;
 }
 
-.education-item{
+.school{
+  font-size: 18px !important;
+}
 
+.date{
+  font-size: 16px !important;
+  padding-bottom: 10px;
+}
+
+.degree{
+  font-size: 22px !important;
 }
