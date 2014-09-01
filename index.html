@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="images/bird.jpg">
 
     <title>Wei-Sheng Lai</title>
   </head>
@@ -53,37 +56,52 @@
             <img src="images/bird.jpg" class="img-responsive" alt="Profile image">
           </div>
           <div class="col-md-9 profile-info">
-            <h2>賴威昇  Wei-Sheng Lai</h2>
-            <p>
-              I am a first-year PhD student in the Graduate institute of Networking and Multimedia at National Taiwan University under the advisement of Dr. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a>.
-            </p>
+            <span class="english-name">Wei-Sheng Lai</span><span class="chinese-name">　賴威昇</span>
+            <div>Ph.D. student</div>
+            <div><a href="http://graphics.csie.ntu.edu.tw/" target="blank">Graphics Group, Communication and Multimedia Lab</a></div>
+            <div><a href="http://www.inm.ntu.edu.tw/main.php" target="blank">Department of Computer Science and Information Engineering</a></div>
+            <div><a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University</a></div>
+            <div><a href="http://www.citi.sinica.edu.tw/index_zh.php" target="blank">Research Center for information Technology Innovation</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="profile-description">
+          <p>
+            I am a first-year PhD student in <a href="http://graphics.csie.ntu.edu.tw/" target="blank">Graphics group of Communication and Multimedia Lab (CMLab)</a> under the advisement of Dr. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a> at <a href="http://www.ntu.edu.tw/" target="blank">NTU</a>. I am also a research assistant in <a href="http://www.citi.sinica.edu.tw/index_zh.php" target="blank">Research Center for information Technology Innovation</a> under the advisement of Dr. <a href="http://www.citi.sinica.edu.tw/pages/yylin/index_zh.html" target="blank">Yen-Yu Lin</a>.
+          </p>
+          <p>
+            My research interests include <b>Computer Vision</b>, <b>Computational Photography</b> and <b>Machine Learning</b>. 
+            <br>
+            Here is my <a href="http://cmlab.csie.ntu.edu.tw/~jasonlai/CV.pdf" target="blank">C.V.</a>
+          </p>
           </div>
         </div>
       </div>
+      <br>
 
       <div class="container section">
         <div class="clearfix anchor-parent">
           <h2>Education</h2>
+          <hr>
           <span id="education" class="anchor"></span>
         </div>
-        <hr>
         <div class="row item">
-          <div class="col-md-4 item-img">
-            <img src="images/ntu.jpg" class="img-responsive">
+          <div class="col-md-4 edu-img">
+            <img src="images/ntu.png" class="img-responsive">
           </div>
           <div class="col-md-8 item-info">
-            <div class="degree"><b>Ph.D</b>, Graduate institute of Networking and Multimedia</div>
+            <div class="degree"><b>Ph.D</b>, Networking and Multimedia</div>
             <div class="school">National Taiwan University, Taipei, Taiwan</div>
             <div class="date">Sep. 2014 - present</div>
           </div>
         </div>
 
         <div class="row item">
-          <div class="col-md-4 item-img">
-            <img src="images/ntu.jpg" class="img-responsive">
+          <div class="col-md-4 edu-img">
+            <img src="images/ntu.png" class="img-responsive">
           </div>
           <div class="col-md-8 item-info">
-            <div class="degree"><b>Masters of Science</b>, Graduate institute of Communication Engineering</div>
+            <div class="degree"><b>M.S.</b>, Communication Engineering</div>
             <div class="school">National Taiwan University, Taipei, Taiwan</div>
             <div class="date">Sep. 2012 - Jun. 2014</div>
           </div>
@@ -91,11 +109,11 @@
 
 
         <div class="row">
-          <div class="col-md-4 item-img">
-            <img src="images/ntu.jpg" class="img-responsive">
+          <div class="col-md-4 edu-img">
+            <img src="images/ntu.png" class="img-responsive">
           </div>
           <div class="col-md-8 item-info">
-            <div class="degree"><b>Bachelor of Science</b>, Department of Electrical Engineering</div>
+            <div class="degree"><b>B.S.</b>, Electrical Engineering</div>
             <div class="school">National Taiwan University, Taipei, Taiwan</div>
             <div class="date">Sep. 2008 - Jun. 2012</div>
           </div>
@@ -104,36 +122,48 @@
       </div>
       <br>
 
-
       <div class="container section">
         <div class="clearfix anchor-parent">
           <h2>Publications</h2>
+          <hr>
           <span id="publication" class="anchor"></span>
         </div>
-        <hr>
+        
+        <div class="row item">
+          <div class="col-md-4 item-img">
+            <img src="images/color-line-deblur.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-9 item-info">
+            <div class="paper">Blur Kernel Estimation Using Color-Line Model For Natural Image Deblurring</div>
+            <div class="author"><b>Wei-Sheng Lai</b></div>
+            <div class="conf">M.S. Thesis, National Taiwan University, 2014</div>
+          </div>
+        </div>
 
-        <ul>
-          <li>
-            <p>
-              <h3>M.S. Thesis</h3>
-              <h4>Blur Kernel Estimation Using Color-Line Model For Natural Image Deblurring</h4>
-              Wei-Sheng Lai
-            </p>
-          </li>
-          
-          <li>
-            <p>
-              <h3>International Conference</h3>
-              <h4>Blur Kernel Estimation Using Color-Line Model (To appear...)</h4>
-              
-              <br>
-              <h4>Improved structural similarity measurement for vocal signals</h4>
-              Wei-Sheng Lai, Chi-Jung Tseng, and Jian-Jiun Ding<br>
-              IEEE International Symposium on Circuits and Systems <b>(ISCAS)</b> 2013
-            </p>
-          </li>
 
-        </ul>
+        <div class="row item">
+          <div class="col-md-4 item-img">
+            <img src="images/pcm.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-9 item-info">
+            <div class="paper">High Quality Image Deblurring Scheme Using the Pyramid Hyper-Laplacian L2 Norm Priors Algorithm</div>
+            <div class="author">Yu Chen, Jian-Jiun Ding, <b>Wei-Sheng Lai</b>, Ying-Jou Chen, Chir-Wei Chang, and Chuan-Chung Chang</div>
+            <div class="conf">Proceedings of Pacific-Rim Conference on Multimedia 2013</div>
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-md-4 item-img">
+            <img src="images/SSIM.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-9 item-info">
+            <div class="paper">Improved structural similarity measurement for vocal signals</div>
+            <div class="author"><b>Wei-Sheng Lai</b>, Chi-Jung Tseng, and Jian-Jiun Ding</div>
+            <div class="conf">IEEE International Symposium on Circuits and Systems <b>(ISCAS)</b> 2013</div>
+          </div>
+        </div>
+
+      
       </div>
       <br>
 
@@ -146,34 +176,20 @@
         <hr>
 
       </div>
-      
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-      <h1>blablabla</h1>
-      <br>
-
-
+    
     </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="last-update">
+          Last Updated: 
+          <script language="JavaScript">
+            document.write(document.lastModified);
+          </script>
+        </p>
+      </div>
+    </div>
+
 
   </body>
 </html>
