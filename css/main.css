@@ -4,7 +4,7 @@ body {
 }
 /* unvisited link */
 a:link {
-    color: #FF0000 !important;
+    color: #FFFFFF !important;
 }
 
 /* visited link */
@@ -58,7 +58,7 @@ a:active {
 
 /*************** background image ****************/
 .bg {
-  background: url('http://cmlab.csie.ntu.edu.tw/~jasonlai/101_blur.jpg') no-repeat center center;
+  background: url('http://cmlab.csie.ntu.edu.tw/~jasonlai/images/101_blur.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
