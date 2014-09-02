@@ -2,9 +2,40 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+/*
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 20px;;
+}*/
+
+.navbar-custom {
+  background-color:#22BB22;
+    color:#ffffff;
+    border-radius:0;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+  background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #33aa33;
+}
+      
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#33aa33;
 }
 
 .chinese-name{
@@ -32,7 +63,7 @@ body {
 .profile-img{
   max-width: 250px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px 20px 0px;
 }
 
 .profile-img > img {
@@ -46,14 +77,15 @@ body {
 }
 
 .profile-description{
-  margin: 20px 20px 20px;
+  margin: 20px 40px 20px;
 }
 
 
 .section{
   background-color: #FFFFFF;
-  padding-top: auto;
   padding-bottom: 20px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
   box-shadow: 4px 4px 3px -2px rgba(20%,20%,40%,0.5);
 }
 
@@ -71,7 +103,7 @@ body {
 }
 
 .date{
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 .degree{
@@ -86,22 +118,34 @@ body {
 .edu-info{
 }
 
+.chess{
+  background-color: #dddddd;
+}
+
 .item{
   padding-bottom: 20px;
+  overflow: hidden;
+  display: table !important;
 }
 
 .item-info{
-  vertical-align: middle !important;
+  vertical-align: top;
+  display: table-cell !important;
+  float: none !important;
 }
 
 .item-img{
-  max-width: 200px;
-  margin: 0 auto;
+  vertical-align: center;
+  display: table-cell !important;
+  float: none !important;
+}
+
+.item-img > img{
   box-shadow: 4px 4px 3px -3px rgba(20%,20%,40%,0.5);
 }
 
 .paper{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -110,8 +154,8 @@ body {
 }
 
 .conf{
-  font-size: 20px;
-  margin: 20px auto 20px;
+  font-size: 18px;
+  margin: 10px auto 0px;
 }
 
 
