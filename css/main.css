@@ -4,35 +4,35 @@ body {
 }
 /* unvisited link */
 a:link {
-    color: #FFFFFF !important;
+    color: #EEEEEE !important;
 }
 
 /* visited link */
 a:visited {
-    color: #FFFFFF !important;
+    color: #EEEEEE !important;
 }
 
 /* mouse over link */
 a:hover {
-    color: yellow !important;
+    color: #FFFFFF !important;
     text-decoration: none !important;
 }
 
 /* selected link */
 a:active {
-    color: #FFFFFF !important;
+    color: #EEEEEE !important;
 }
 
 /*************** customized navbar ***************/
 
 .navbar-nav{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar-custom {
-  background-color:#45619D;
-    color:#ffffff;
-    border-radius:0;
+  background-color:#171717;
+  color:#EEEEEE;
+  border-radius:0;
 }
   
 .navbar-custom .navbar-nav > li > a {
@@ -47,7 +47,7 @@ a:active {
       
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #39538c;
+    background-color: #3F3F3F;
 }
       
 .navbar-custom .navbar-brand {
@@ -98,6 +98,11 @@ a:active {
   font-weight: bold;
 }
 
+.email{
+  margin: 10px auto 10px;
+  font-family: monospace;
+}
+
 .no-bullet-list{
   list-style: none;
 }
@@ -106,7 +111,7 @@ a:active {
   background:transparent;
   color: #FFFFFF;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .profile-img{
@@ -126,7 +131,7 @@ a:active {
 }
 
 .profile-description{
-  margin: 40px 40px 40px;
+  margin: 40px 40px 0px;
 }
 
 .info-list{
@@ -149,6 +154,7 @@ a:active {
   padding-right: 40px !important;
   box-shadow: 4px 4px 3px -2px rgba(20%,20%,40%,0.5);
   border-radius: 20px;
+  margin: 20px auto 20px;
 }
 
 .anchor-parent{
@@ -204,8 +210,8 @@ a:active {
 }
 
 .item-img{
-  vertical-align: center;
   display: table-cell !important;
+  vertical-align: middle !important;
   float: none !important;
 }
 
@@ -231,4 +237,16 @@ a:active {
 .last-update{
   font-size: 16px;
   color: #208040;
+}
+
+.tag{
+  padding-bottom: 5px;
+}
+
+.fa-fw{
+  padding-right: 20px !important;
+}
+
+.white-space{
+  margin-right: 50px;
 }
