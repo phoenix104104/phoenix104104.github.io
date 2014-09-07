@@ -23,24 +23,27 @@ html {
 }
 
 /* unvisited link */
-a:link {
+.navbar a:link {
     color: #DDDDDD !important;
 }
 
 /* visited link */
-a:visited {
+.navbar a:visited {
     color: #DDDDDD !important;
 }
 
 /* mouse over link */
-a:hover {
+.navbar a:hover {
     color: #FFFFFF !important;
     text-decoration: none !important;
 }
 
+a:hover{
+    text-decoration: none !important;
+}
 /* selected link */
-a:active {
-    color: #DDDDDD !important;
+.navbar a:active {
+    color: #FFFFFF !important;
 }
 
 /*************** customized navbar ***************/
@@ -51,7 +54,7 @@ a:active {
 
 .navbar-custom {
   background-color:#303030;
-  color:#EEEEEE;
+  color:#DDDDDD;
   border-radius:0;
 }
   
@@ -129,7 +132,7 @@ a:active {
 
 .profile{
   background:transparent;
-  color: #DDDDDD;
+  color: #EEEEEE;
   padding-top: 50px;
   padding-bottom: 50px;
 }
