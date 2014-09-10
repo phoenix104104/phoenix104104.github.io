@@ -107,6 +107,10 @@ a:hover{
   z-index: -1;  */
 }
 
+.body{
+
+  background-color: #444444;
+}
 .jumbotron {
   margin-bottom: 0px !important;
 /*  height: 350px;
