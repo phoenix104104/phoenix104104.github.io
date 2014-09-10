@@ -233,20 +233,15 @@ a:hover{
 .item{
   padding-bottom: 20px;
   overflow: hidden;
-  display: table !important;
 }
 
 .item-info{
   vertical-align: top;
-  display: table-cell !important;
-  float: none !important;
   font-size: 18px;
 }
 
 .item-img{
-  display: table-cell !important;
   vertical-align: middle !important;
-  float: none !important;
 }
 
 .item-img > img{
