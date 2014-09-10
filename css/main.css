@@ -27,8 +27,12 @@ html {
     color: #DDDDDD !important;
 }
 
+
 /* visited link */
 .navbar a:visited {
+    color: #DDDDDD !important;
+}
+.profile a:visited {
     color: #DDDDDD !important;
 }
 
@@ -37,7 +41,10 @@ html {
     color: #FFFFFF !important;
     text-decoration: none !important;
 }
-
+.profile a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
 a:hover{
     text-decoration: none !important;
 }
@@ -86,7 +93,7 @@ a:hover{
 
 /*************** background image ****************/
 .bg {
-  background: url('http://cmlab.csie.ntu.edu.tw/~jasonlai/images/101_blur.jpg') no-repeat center center;
+  background: url('../images/101_blur.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -132,7 +139,7 @@ a:hover{
 
 .profile{
   background:transparent;
-  color: #EEEEEE;
+  color: #DDDDDD;
   padding-top: 50px;
   padding-bottom: 50px;
 }
