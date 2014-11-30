@@ -87,13 +87,13 @@ a:hover{
     background-color:#eeeeee;
 }
 .navbar-custom .icon-bar {
-    background-color:#33aa33;
+    background-color:#333333;
 }
 /*************** customized navbar ***************/
 
 /*************** background image ****************/
 .bg {
-  background: url('../images/101_blur.jpg') no-repeat center center;
+  background: url('../images/101_blur_small.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
