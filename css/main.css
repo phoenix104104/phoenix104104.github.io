@@ -9,88 +9,6 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 0px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-}
-
-/* unvisited link */
-.navbar a:link {
-    color: #DDDDDD !important;
-}
-
-
-/* visited link */
-.navbar a:visited {
-    color: #DDDDDD !important;
-}
-.profile a:visited {
-    color: #DDDDDD !important;
-}
-
-/* mouse over link */
-.navbar a:hover {
-    color: #FFFFFF !important;
-    text-decoration: none !important;
-}
-.profile a:hover {
-    color: #FFFFFF !important;
-    text-decoration: none !important;
-}
-a:hover{
-    text-decoration: none !important;
-}
-/* selected link */
-.navbar a:active {
-    color: #FFFFFF !important;
-}
-
-/*************** customized navbar ***************/
-
-.navbar-nav{
-  font-size: 18px;
-}
-
-.navbar-custom {
-  background-color:#303030;
-  color:#DDDDDD;
-  border-radius:0;
-}
-  
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
-    padding-left:20px;
-    padding-right:20px;
-}
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-  color: #404040;
-  background-color:transparent;
-}
-      
-.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    background-color: #404040;
-}
-      
-.navbar-custom .navbar-brand {
-    color:#eeeeee;
-}
-.navbar-custom .navbar-toggle {
-    background-color:#eeeeee;
-}
-.navbar-custom .icon-bar {
-    background-color:#333333;
-}
-/*************** customized navbar ***************/
-
 /*************** background image ****************/
 .bg {
   background: url('../images/101_blur_small.jpg') no-repeat center center;
@@ -108,27 +26,28 @@ a:hover{
 }
 
 .body{
-
   background-color: #444444;
 }
-.jumbotron {
-  margin-bottom: 0px !important;
-/*  height: 350px;
-  color: white;
-  text-shadow: #444 0 1px 1px;
-  background:transparent;*/
+
+.profile a:visited {
+    color: #DDDDDD !important;
 }
-
-
+.profile a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
 
 .chinese-name{
   font-family: "DFKai-sb";
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
 }
 
 .english-name{
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -142,7 +61,6 @@ a:hover{
 }
 
 .profile{
-  background:transparent;
   color: #DDDDDD;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -162,6 +80,8 @@ a:hover{
   vertical-align: center;
   position: relative;
   font-size: 20px;
+  background-color: rgba(30%,30%,30%,0.5);
+  border-radius: 20px;
 }
 
 .profile-description{
@@ -181,36 +101,26 @@ a:hover{
   text-decoration: none;
 }
 
+hr {
+  size: 30;
+}
+
 .section{
-  background-color: #FFFFFF;
   padding-bottom: 20px;
   padding-left: 40px !important;
   padding-right: 40px !important;
-  box-shadow: 4px 4px 3px -2px rgba(20%,20%,40%,0.5);
-  border-radius: 20px;
   margin: 20px auto 20px;
 }
 
-.anchor-parent{
-  position: relative;
-}
-
-.anchor{
-  position: absolute;
-  top: -60px;
-}
 
 .school{
-  font-size: 18px !important;
 }
 
 .date{
-  font-size: 16px !important;
   color: #777777;
 }
 
 .degree{
-  font-size: 22px !important;
 }
 
 .edu {
@@ -308,4 +218,25 @@ a:hover{
   padding-top: 50px;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+
+
+
+#home { 
+    background: url(../images/101_cut_blur.jpg) no-repeat fixed center;
+    height: auto;
+    width: 100%; 
+    margin: 0 0; 
+    position: relative; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding: 100px 0px;
+    background-size: cover;
+}
+
+.spacer{
+  width: 100%;
+  height: 0px;
+  margin: 20px 0px;
+  background-color: #555555 !important;
 }

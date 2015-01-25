@@ -10,8 +10,10 @@
     
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/scrolling-nav.css">
 
     <link rel="shortcut icon" href="images/bird.jpg">
     
@@ -31,7 +33,6 @@
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- HEADER -->
-    <div class="container">
       <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
 
@@ -41,12 +42,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">About Me</a>  
           </div>
 
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+              <li><a class="page-scroll" href="#page-top">Home</a></li>
+              <li><a class="page-scroll" href="#about">About</a></li>
               <li><a class="page-scroll" href="#education">Education</a></li>
               <li><a class="page-scroll" href="#publication">Publications</a></li>
               <li><a class="page-scroll" href="#project">Projects</a></li>
@@ -57,11 +61,11 @@
         </div>
 
       </div>
-    </div>
 
     <!-- MAIN CONTENT -->
-
-    <div class="jumbotron bg">
+    
+    <section id="home" data-speed="0" data-type="background">
+    
       <div class="container profile">
         <div class="row">
           <div class="col-md-4 col-xs-12 profile-img">
@@ -83,32 +87,39 @@
 
           </div>
         </div>
+        
+      </div>
+    
+    </section>
+
+
+    <section id="about" class="about-section">
+
+      <div class="container">
         <div class="row">
           <div class="col-md-12 profile-description">
+            <h2>About Me</h2>
+            <div class="spacer"></div>
             <p>
-              I am a first-year PhD student in <a href="http://graphics.csie.ntu.edu.tw/" target="blank">Graphics group of Communication and Multimedia Lab (CMLab)</a> under the advisement of Dr. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a> at <a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University (NTU)</a>. I am also a research assistant in <a href="http://www.citi.sinica.edu.tw/index_zh.php" target="blank">Research Center for information Technology Innovation</a> under the advisement of Dr. <a href="http://www.citi.sinica.edu.tw/pages/yylin/index_zh.html" target="blank">Yen-Yu Lin</a>.
+              I am a first-year PhD student in CMLab at NTU under the advisement of Dr. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a>. I am also a research assistant in <a href="http://www.citi.sinica.edu.tw/index_zh.php" target="blank">Research Center for information Technology Innovation</a> working with Dr. <a href="http://www.citi.sinica.edu.tw/pages/yylin/index_zh.html" target="blank">Yen-Yu Lin</a>.
             </p>
             <p>
               My research interests include <b>Computer Vision</b>, <b>Computational Photography</b> and <b>Machine Learning</b>. 
               <br>
-              Here is my <a class="label label-success" href="http://cmlab.csie.ntu.edu.tw/~jasonlai/CV.pdf" target="blank">C.V.</a>
+              Here is my <a href="http://cmlab.csie.ntu.edu.tw/~jasonlai/CV.pdf" target="blank"><b>CV</b></a>
             </p>
             
-           
           </div>
 
         </div>
-      </div>
-    </div> <!-- end of top jumbotron -->
+      </div> <!-- end of Description -->
+    </section>
 
-    <div class="jumbotron">
-      <div class="container section">
-        <div class="clearfix anchor-parent">
-          <h2>Education</h2>
-          <hr>
-          <span id="education" class="anchor"></span>
-        </div>
-
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="spacer"></div>
+          
         <div class="row edu">
           <div class="col-md-12 col-xs-12 edu-info">
             <div class="degree"><b>Ph.D</b> in Networking and Multimedia, National Taiwan University, Taipei, Taiwan</div>
@@ -131,15 +142,13 @@
         </div>
 
       </div> <!-- end of Education -->
-
-      
-      <div class="container section">
-        <div class="clearfix anchor-parent">
-          <h2>Publications</h2>
-          <hr>
-          <span id="publication" class="anchor"></span>
-        </div>
-        
+    </section>
+    
+    <section id="publication" class="publication-section">
+      <div class="container">
+        <h2>Publications</h2>
+        <div class="spacer"></div>
+          
         <div class="row item chess">
           <div class="col-md-3 col-sm-6 col-xs-12 item-img">
             <img src="images/colorline-deblur.jpg" class="img-thumbnail img-responsive">
@@ -187,15 +196,14 @@
         </div>
 
       </div> <!-- end of Publication -->
+    </section>
 
 
-      <div class="container section">
-        <div class="clearfix anchor-parent">
-          <h2>Projects</h2>
-          <hr>
-          <span id="project" class="anchor"></span>
-        </div>
-        
+    <section id="project" class="project-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="spacer"></div>
+          
         <div class="row">
 
           <div class="col-md-4 col-sm-4 col-xs-12 proj">
@@ -347,14 +355,13 @@
         </div>
 
       </div> <!-- end of Projects -->
-
+    </section>
       
-      <div class="container section">
-        <div class="clearfix anchor-parent">
-          <h2>Activity</h2>
-          <hr>
-          <span id="activity" class="anchor"></span>
-        </div>
+
+    <section id="activity" class="activity-section">
+      <div class="container">
+        <h2>Activity</h2>
+        <div class="spacer"></div>
         
         <div class="row">
 
@@ -394,11 +401,9 @@
         </div>
 
       </div> <!-- end of Activity -->
+    </section>
 
 
-
-    
-    </div> <!-- end of body jumbotron -->
 
     <div class="footer">
       <div class="container">
@@ -414,7 +419,6 @@
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
