@@ -10,20 +10,7 @@ html {
 }
 
 /*************** background image ****************/
-.bg {
-  background: url('../images/101_blur_small.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  /*
-  position: fixed;
-  width: 100%;
-  height: 350px; /*same height as jumbotron
-  top:0;
-  left:0;
-  z-index: -1;  */
-}
+
 
 .body{
   background-color: #444444;
@@ -190,7 +177,6 @@ hr {
 
 
 .last-update{
-  font-size: 16px;
   color: #208040;
 }
 
@@ -206,6 +192,7 @@ hr {
   margin-right: 50px;
 }
 
+
 .footer {
   bottom: 0;
   width: 100%;
@@ -215,7 +202,7 @@ hr {
 }
 
 .footer > .container {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -240,3 +227,7 @@ hr {
   margin: 20px 0px;
   background-color: #555555 !important;
 }
+
+/* navbar fade effect */
+.navbar-fixed-top { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s;}
+.navbar-fixed-top.opaque { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s;
