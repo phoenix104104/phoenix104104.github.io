@@ -19,6 +19,12 @@ html {
 .profile a:visited {
     color: #DDDDDD !important;
 }
+.profile a:link {
+    color: #DDDDDD !important;
+}
+.profile a:active {
+    color: #DDDDDD !important;
+}
 .profile a:hover {
     color: #FFFFFF !important;
     text-decoration: none !important;
