@@ -81,6 +81,10 @@ a:hover{
   margin: 40px 0px 0px;
 }
 
+.edu-img {
+  margin: 0px;
+}
+
 .info-list{
   float: left;
 }
@@ -211,6 +215,7 @@ hr {
   padding-top: 80px;
   padding-right: 30px;
   padding-left: 30px;
+  text-align: center;
 }
 
 
