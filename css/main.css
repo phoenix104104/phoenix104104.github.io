@@ -138,14 +138,14 @@ hr {
 
 
 .item{
-  margin-bottom: 10px;
-  margin-top: 10px;
+  min-height: 150px;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 
 
 .item-img{
-  vertical-align: middle !important;
+  /*min-height: 200px !important;*/
 }
 
 
@@ -154,7 +154,6 @@ hr {
 }
 
 .item-info{
-  padding-top: 10px;
   vertical-align: top;
   font-size: 18px;
 }
@@ -174,15 +173,16 @@ hr {
 .paper{
   font-size: 18px;
   font-weight: bold;
+  color: #00337D;
 }
 
 .author{
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 .conf{
-  font-size: 18px;
-  margin: 10px auto 0px;
+  font-size: 16px;
+  margin: 20px auto 0px;
 }
 
 
