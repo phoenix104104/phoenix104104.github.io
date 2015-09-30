@@ -39,6 +39,8 @@ a:hover{
 .english-name{
   font-size: 32px;
   font-weight: bold;
+
+  font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .email{
@@ -57,9 +59,11 @@ a:hover{
 }
 
 .profile-img{
-  max-width: 250px;
   text-align: center;
+  /*max-width: 270px;
   margin: 0px 20px 0px;
+  border-style: solid;
+  border-color: red;*/
 }
 
 .profile-img > img {
@@ -67,15 +71,23 @@ a:hover{
 }
 
 .profile-info{
+  height: 275px;
   vertical-align: center;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   background-color: rgba(30%,30%,30%,0.5);
   border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  /*
+  border-style: solid;
+  border-color: yellow;
+  */
 }
 
 .profile-description{
-  margin: 40px 0px 0px;
+  margin: 0px 0px 0px;
 }
 
 .edu-img {
@@ -83,11 +95,11 @@ a:hover{
 }
 
 .info-list{
-  float: left;
+  /*float: left;*/
 }
 
 .social-links {
-  float: right;
+ /* float: right;*/
 }
 
 .social-links > a {
@@ -96,7 +108,7 @@ a:hover{
 }
 
 hr {
-  size: 30;
+  color: #000000 !important;
 }
 
 .section{
@@ -112,6 +124,7 @@ hr {
 
 .date{
   color: #777777;
+  font-size: 16px !important;
 }
 
 .degree{
@@ -152,7 +165,6 @@ hr {
 
 .item-info{
   vertical-align: top;
-  font-size: 18px;
 }
 
 .proj{
@@ -175,10 +187,12 @@ hr {
 
 .author{
   font-size: 16px !important;
+  margin: 5px auto 0px;
 }
 
 .conf{
-  font-size: 16px;
+  font-size: 16px !important;
+  font-style: italic !important;
   margin: 5px auto 0px;
 }
 
@@ -189,6 +203,7 @@ hr {
 
 .tag{
   padding-bottom: 5px;
+  font-family: Arial;
 }
 
 .fa-fw{
@@ -205,7 +220,7 @@ hr {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 200px;
-  background-color: #f5f5f5;
+  background-color: #dddddd;
 }
 
 .footer > .container {
@@ -227,6 +242,64 @@ hr {
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
     padding: 100px 0px;
     background-size: cover;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+
+.about-section {
+    height: auto;
+    font-size: 18px;
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.news-section {
+    height: auto;
+    font-size: 16px;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+
+.publication-section {
+    height: auto;
+    font-size: 16px;
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.project-section {
+    height: auto;
+    font-size: 16px;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+
+.education-section {
+    height: auto;
+    font-size: 18px;
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.activity-section {
+    height: auto;
+    font-size: 16px;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
 .spacer{

@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <meta http-equiv="refresh" content="0;url=http://graduatestudents.ucmerced.edu/wlai24/" />
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="phoenix104104.github.io : ">
@@ -9,10 +10,17 @@
     <meta name="author" content="phoenix104104">
     
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
+    <!--
+  <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
     <link rel="stylesheet" href="css/scrolling-nav.css">
     <link rel="stylesheet" href="css/mfp.css">
 
@@ -53,9 +61,10 @@
             <ul class="nav navbar-nav">
               <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
               <li><a class="page-scroll" href="#about">About</a></li>
-              <li><a class="page-scroll" href="#education">Education</a></li>
+              <li><a class="page-scroll" href="#news">News</a></li>
               <li><a class="page-scroll" href="#publication">Publications</a></li>
               <li><a class="page-scroll" href="#project">Projects</a></li>
+              <li><a class="page-scroll" href="#education">Education</a></li>
               <li><a class="page-scroll" href="#activity">Activities</a></li>
             </ul>
           </div>
@@ -66,21 +75,23 @@
 
     <!-- MAIN CONTENT -->
     
-    <section id="home" data-speed="0" data-type="background">
+    <section id="home" data-speed="0" data-type="background" class="home-section">
     
       <div class="container profile">
         <div class="row">
           <div class="col-md-4 col-xs-12 profile-img">
-            <img src="images/profile.png" class="img-responsive" alt="Profile image">
+            <img src="images/profile.png" class="img-responsive center-block" alt="Profile image">
           </div>
+
+
           <div class="col-md-8 col-xs-12 profile-info">
-            <span class="english-name">Wei-Sheng Lai</span><span class="chinese-name">　賴威昇</span>
+            <div><span class="english-name">Wei-Sheng Lai</span>
+            <div class="spacer"></div>
             <div class="info-list">
               <div>Ph.D. student</div>
-              <div><a href="http://graphics.csie.ntu.edu.tw/" target="blank">Graphics Group, Communication and Multimedia Lab</a></div>
-              <div><a href="http://www.inm.ntu.edu.tw/main.php" target="blank">Graduate Institute of Networking and Multimedia</a></div>
-              <div><a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University</a></div>
-              <div class='email'>jasonlai at cmlab.csie.ntu.edu.tw</div>
+              <div><a href="https://eecs.ucmerced.edu/" target="blank">Department of Electrical Engineering and Computer Science</a></div>
+              <div><a href="http://www.ucmerced.edu/" target="blank">University of California, Merced</a></div>
+              <div class='email'>wlai24 [at] ucmerced.edu</div>
             </div>
             <div class="social-links">
               <a href="https://www.linkedin.com/in/weishenglai" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -101,12 +112,14 @@
         <div class="row">
           <div class="col-md-12 profile-description">
             <h2>About Me</h2>
+            <hr>
             <div class="spacer"></div>
             <p>
-              I am a first-year PhD student in CMLab at NTU under the advisement of Dr. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a>. I am also a research assistant in <a href="http://www.citi.sinica.edu.tw/index_zh.php" target="blank">Academia Sinica</a> working with Dr. <a href="http://www.citi.sinica.edu.tw/pages/yylin/index_zh.html" target="blank">Yen-Yu Lin</a>.
+              I am a first-year PhD student in EECS at UC Merced under the advisement of Prof. <a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a>. 
+              Before coming to UC Merced in 2015, I studied at National Taiwan University, working with Prof. <a href="http://www.csie.ntu.edu.tw/~cyy" target="blank">Yung-Yu Chuang</a> and Dr. <a href="http://www.citi.sinica.edu.tw/pages/yylin/index_zh.html" target="blank">Yen-Yu Lin</a>.
             </p>
             <p>
-              My research interests include <b>Computer Vision</b>, <b>Computational Photography</b> and <b>Machine Learning</b>. Here is my <a href="http://cmlab.csie.ntu.edu.tw/~jasonlai/cv.pdf" target="blank"><b>CV</b></a>.
+              My research interests include <b>Computer Vision</b>, <b>Computational Photography</b> and <b>Machine Learning</b>. Here is my <a href="cv.pdf" target="blank"><b>CV</b></a>.
             </p>
             
           </div>
@@ -115,49 +128,31 @@
       </div> <!-- end of Description -->
     </section>
 
-    <section id="education" class="education-section">
+    <section id="news" class="news-section">
+
       <div class="container">
-        <h2>Education</h2>
-        <div class="spacer"></div>
-        
-        <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="http://www.ntu.edu.tw/" target="_blank">
-              <img src="images/ntu.png" class="img-responsive edu-img">
-            </a>
+        <div class="row">
+          <div class="col-md-12">
+            <h2>News</h2>
+            <hr>
+            <div class="spacer"></div>
+            <ul>
+              <li><span class="glyphicon glyphicon-education"></span> 08/2015: Start my PhD at UC Merced, California</li>
+              <li><span class="glyphicon glyphicon-file"></span> 03/2015: One paper is accepted in CVPR 2015</li>
+            </ul>
+            
           </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="row edu">
-              <div class="col-md-12 col-xs-12 edu-info">
-                <div class="degree"><b>Ph.D</b> in Networking and Multimedia, National Taiwan University, Taipei, Taiwan</div>
-                <div class="date">Sep. 2014 - present</div>
-              </div>
-            </div>
 
-            <div class="row edu">
-              <div class="col-md-12 col-xs-12 edu-info">
-                <div class="degree"><b>M.S.</b> in Communication Engineering, National Taiwan University, Taipei, Taiwan</div>
-                <div class="date">Sep. 2012 - Jun. 2014</div>
-              </div>
-            </div>
-
-            <div class="row edu">
-              <div class="col-md-12 col-xs-12 edu-info">
-                <div class="degree"><b>B.S.</b> in Electrical Engineering, National Taiwan University, Taipei, Taiwan</div>
-                <div class="date">Sep. 2008 - Jun. 2012</div>
-              </div>
-            </div>
-    
-          </div>
         </div>
-
-        
-      </div> <!-- end of Education -->
+      </div> <!-- end of News -->
     </section>
-    
+
+
+
     <section id="publication" class="publication-section">
       <div class="container">
         <h2>Publications</h2>
+        <hr>
         <div class="spacer"></div>
           
         <div class="row item">
@@ -175,6 +170,7 @@
               <span class="label label-primary">Computer Vision</span>
             </div>
             <div><i class="fa fa-globe fa-fw"></i><a href="http://cmlab.csie.ntu.edu.tw/~jasonlai/colorline_deblur/" target="blank">project website</a></div>
+            <div><i class="fa fa-file-pdf-o fa-fw"></i><a href="http://www.csie.ntu.edu.tw/~cyy/publications/papers/Lai2015BKE.pdf" target="blank">PDF</a></div>
           </div>
         </div>
 
@@ -201,6 +197,7 @@
     <section id="project" class="project-section">
       <div class="container">
         <h2>Projects</h2>
+        <hr>
         <div class="spacer"></div>
           
         <div class="row">
@@ -249,7 +246,7 @@
               </div>
               <div><i class="fa fa-users fa-fw"></i>江柏宣</div>
               <div><i class="fa fa-globe fa-fw"></i><a href="http://ntusbleague.csie.org" target="blank">website</a></div>
-              <div>A softball league (NTUSBLeague) record website. The league consists of 18 teams and about 400 players.</div>
+              <div class="proj-description">A softball league (NTUSBLeague) record website. The league consists of 18 teams and about 400 players.</div>
             </div>
           </div>          
           
@@ -398,9 +395,66 @@
     </section>
       
 
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2>Education</h2>
+        <hr>
+        <div class="spacer"></div>
+        
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="http://www.ntu.edu.tw/" target="_blank">
+              <img src="images/ucmerced.jpg" class="img-responsive edu-img">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            
+            <div class="row edu">
+              <div class="col-md-12 col-xs-12 edu-info">
+                <div class="degree"><b>Ph.D.</b> in EECS, University of California, Merced, USA</div>
+                <div class="date">Sep. 2015 - present </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="http://www.ntu.edu.tw/" target="_blank">
+              <img src="images/ntu.png" class="img-responsive edu-img">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            
+            <div class="row edu">
+              <div class="col-md-12 col-xs-12 edu-info">
+                <div class="degree"><b>M.S.</b> in Communication Engineering, National Taiwan University, Taipei, Taiwan</div>
+                <div class="date">Sep. 2012 - Jun. 2014</div>
+              </div>
+            </div>
+
+            <div class="row edu">
+              <div class="col-md-12 col-xs-12 edu-info">
+                <div class="degree"><b>B.S.</b> in Electrical Engineering, National Taiwan University, Taipei, Taiwan</div>
+                <div class="date">Sep. 2008 - Jun. 2012</div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+        
+      </div> <!-- end of Education -->
+    </section>
+    
+
+
+
     <section id="activity" class="activity-section">
       <div class="container">
         <h2>Activities</h2>
+        <hr>
         <div class="spacer"></div>
         
         <div class="row">
@@ -483,7 +537,12 @@
 
 
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
