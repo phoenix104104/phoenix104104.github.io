@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>Correcting Face Distortion in Wide-Angle Videos</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+        
+      </div>
+    </nav>
+
+  </div>
+
+
+
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Correcting Face Distortion in Wide-Angle Videos</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col l3 m6 s12">
+          <div class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></div>
+          <div class="school">Google</div>
+        </h5>
+
+        <h5 class="header col l3 m6 s12">
+          <div class="author"><a href="http://people.csail.mit.edu/yichangshih/" target="blank">YiChang Shih</a></div>
+          <div class="school">Google</div>
+        </h5>
+
+        <h5 class="header col l3 m6 s12">
+          <div class="author"><a href="http://chiakailiang.org/" target="blank">Chia-Kai Liang</a></div>
+          <div class="school">Google</div>
+        </h5>
+
+        <h5 class="header col l3 m6 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a></div>
+          <div class="school">UC Merced, Google</div>
+        </h5>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col offset-l1 l10 m12 s12">
+          <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/gBkdjNZAd2U" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Video blogs and selfies are popular social media formats, which are often captured by wide-angle cameras to show human subjects and expanded background. Unfortunately, due to perspective projection, faces near corners and edges exhibit apparent distortions that stretch and squish the facial features, resulting in poor video quality. In this work, we present a video warping algorithm to correct these distortions. Our key idea is to apply stereographic projection locally on the facial regions. We formulate a mesh warp problem using spatial-temporal energy minimization and minimize background deformation using a line-preservation term to maintain the straight edges in the background. To address temporal coherency, we constrain the temporal smoothness on the warping meshes and facial trajectories through the latent variables. For performance evaluation, we develop a wide-angle video dataset with a wide range of focal lengths. The user study shows that 83.9% of users prefer our algorithm over other alternatives based on perspective projection.
+    </div>
+
+    
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+
+      <div class="row">
+      
+        <div class="col m12 s12 center">
+          <a href="https://arxiv.org/abs/1907.13622" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="https://arxiv.org/abs/1907.13622" target="_blank">Arxiv (accepted to TIP)</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Wei-Sheng Lai, YiChang Shih, Chia-Kai Liang, and Ming-Hsuan Yang, "Correcting Face Distortion in Wide-Angle Videos", IEEE Transactions on Image Processing (TIP), 2021</p>
+
+      <br>
+
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@inproceedings{lai2021correcting,
+    author    = {Lai, Wei-Sheng and Shih, YiChang and Liang, Chia-Kai and Yang, Ming-Hsuan}, 
+    title     = {Correcting Face Distortion in Wide-Angle Videos}, 
+    booktitle = {TIP},
+    year      = {2021}
+}
+</pre>
+    </div>
+
+
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          <a href="http://people.csail.mit.edu/yichangshih/wide_angle_portrait/" target="blank">Distortion-Free Wide-Angle Portraits on Camera Phones</a>, SIGGRAPH, 2019.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+    
+      <div class="row">
+        <div class="col l4 offset-l4 s12">
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=330&t=tt&d=IdagGq-8LtwiyuPf54lFdBR9SZMtYjTib2mc7EtvXa0"></script>
+        </div>
+      </div>
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Jason Lai 2019
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
