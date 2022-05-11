@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<!-- This file generated using Python HTMLgen module. -->
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="HTMLgen 2.2.2">
+        <TITLE>Face Deblurring using Dual Camera Fusion on Mobile Phones<br>(SIGGRAPH 2022)</TITLE> </HEAD>
+<BODY>
+<link rel='stylesheet' href='style.css' /><META HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+<div id='wrap'><font face='arial'>
+<h1><div id='title'><br> Face Deblurring using Dual Camera Fusion on Mobile Phones (SIGGRAPH 2022)<br> <p>Supplemental Results</p> <div></h1>
+<h2><div id='title'><br><li><a href=full_resolution_results/index.html>[1] Our full-resolution fusion results</a></li><div></h2>
+<h2><div id='title'><br><li><a href=intermediate_results/index.html>[2] Our intermediate results</a></li><div></h2>
+<h2><div id='title'><br><li><a href=academic/index.html>[3] Comparisons to academic works</a></li><div></h2>     
+<h2><div id='title'><br><li><a href=commercial/index.html>[4] Comparisons to commercial products</a></li><div></h2>
+      
+<HR>
+
+<script>
+var array = [`:
+];
+var default_element_per_page = 25;
+ function getParameterByName(name, url) {
+   if (!url) url = window.location.href;
+   name = name.replace(/[\[\]]/g, "\\$&");
+   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+       results = regex.exec(url);
+   if (!results) return null;
+   if (!results[2]) return '';
+   return decodeURIComponent(results[2].replace(/\+/g, " "));
+ }
+ var page_query = getParameterByName('page');
+ if (page_query == null) { page_query = '0'; }
+ var page = parseInt(page_query);
+ var element_per_page = default_element_per_page;
+ var element_query = getParameterByName('element');
+ if (element_query != null)
+ {element_per_page = parseInt(element_query);}
+ var start = page * element_per_page;
+ var end = Math.min((page +1) * element_per_page, array.length);
+ for (i = start; i < end; i++) {
+   document.write(array[i]);
+ }
+</script>
+
+<div class='pagination'>
+<script>
+var total_page = Math.ceil(array.length/element_per_page);
+var prev = Math.max(page - 1, 0/;
+var next = Math.min(page + 1, total_page-1);
+var element_str = "&element=" + element_per_page.toString();
+var prev_link = "?page="+ prev.toString() + element_str;
+var next_link = "?page="+ next.toString() + element_str;
+document.write("<a href='"+ prev_link + "'>&laquo;</a>");
+for( p = 0; p < total_page; p++ ){
+ var page_link = "?page=" + p.toString() + element_str;
+ str = "<a href='"+page_link + "'>" + p.toString() + "</a>";
+ if (p==page_query){
+   str = "<a class='active' href='"+page_link ;
+   str += "'>" + page_query + "</a>";}
+ document.write(str);
+ }
+document.write("<a href='"+next_link + "'>&raquo;</a>");
+</script>
+</div>
+
+</BODY> </HTML>

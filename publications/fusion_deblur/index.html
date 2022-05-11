@@ -17,23 +17,6 @@
 </head>
 <body>
   
-  <div class="navbar-fixed">
-
-    <nav class="grey darken-3" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="left hide-on-med-and-down">
-          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
-          <!--<li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
-          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
-          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>-->
-        </ul>
-        
-      </div>
-    </nav>
-
-  </div>
-
 
 
 
@@ -42,44 +25,21 @@
     <div class="container scrollspy" id="home">
 
       <h5 class="header center black-text">SIGGRAPH 2022</h5>
-      <br>
       <h4 class="header center black-text">Face Deblurring using Dual Camera Fusion on Mobile Phones</h4>
 
-      <br>
+      <h5 class="col center">
+          <span class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></span>, 
+          <span class="author"><a href="http://people.csail.mit.edu/yichangshih/" target="blank">YiChang Shih</a></span>, 
+          <span class="author"><a href="https://www.linkedin.com/in/lcchu/" target="blank">Lun-Cheng Chu</a></span>, 
+          <span class="author"><a href="https://www.linkedin.com/in/xiaotong-wu-127705a0/" target="blank">Xiaotong Wu</a></span>,
+          <span class="author"><a href="https://www.linkedin.com/in/sung-fang-tsai-5455b43b/" target="blank">Sung-Fang Tsai</a></span>, 
+          <span class="author"><a href="https://scholar.google.com/citations?hl=en&user=h_Izm-wAAAAJ&view_op=list_works&sortby=pubdate" target="blank">Michael Krainin</a></span>, 
+          <span class="author"><a href="https://deqings.github.io" target="blank">Deqing Sun</a></span>, 
+          <span class="author"><a href="http://chiakailiang.org" target="blank">Chia-Kai Liang</a></span>
+      </h5>
 
       <div class="row center">
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></div>
-        </h5>
-
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="http://people.csail.mit.edu/yichangshih/" target="blank">YiChang Shih</a></div>
-        </h5>
-
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="" target="blank">Lun-Cheng Chu</a></div>
-        </h5>
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="" target="blank">Xiaotong Wu</a></div>
-        </h5>
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="" target="blank">Sung-Fang Tsai</a></div>
-        </h5>
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="https://scholar.google.com/citations?hl=en&user=h_Izm-wAAAAJ&view_op=list_works&sortby=pubdate" target="blank">Michael Krainin</a></div>
-        </h5>
-      </div>
-      <div class="row center">
-        <h5 class="header col l2 offset-l4 m4 s6">
-          <div class="author"><a href="https://deqings.github.io/" target="blank">Deqing Sun</a></div>
-        </h5>
-
-        <h5 class="header col l2 m4 s6">
-          <div class="author"><a href="http://chiakailiang.org/" target="blank">Chia-Kai Liang</a></div>
-        </h5>
-      </div>
-      <div class="row center">
-        <h5 class="header center black-text">Google</h5>
+        <h5 class="header center black-text affiliation">Google</h5>
       </div>
 
     </div>
@@ -101,6 +61,51 @@
     </div>
 
     <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Motion blur of fast-moving subjects is a longstanding problem in photography and very common on mobile phones due to limited light collection efficiency, particularly in low-light conditions. While we have witnessed great progress in image deblurring in recent years, most methods require significant computational power and have limitations in processing high-resolution photos with severe local motions. To this end, we develop a novel face deblurring system based on the dual camera fusion technique for mobile phones. The system detects subject motion to dynamically enable a reference camera, e.g., ultrawide angle camera commonly available on recent premium phones, and captures an auxiliary photo with faster shutter settings. While the main shot is low noise but blurry, the reference shot is sharp but noisy. We learn ML models to align and fuse these two shots and output a clear photo without motion blur. Our algorithm runs efficiently on Google Pixel 6, which takes 463 ms overhead per shot. Our experiments demonstrate the advantage and robustness of our system against alternative single-image, multi-frame, face-specific, and video deblurring algorithms as well as commercial products. To the best of our knowledge, our work is the first mobile solution for face motion deblurring that works reliably and robustly over thousands of images in diverse motion and lighting conditions.
+    </div>
+
+    
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Paper</div>
+      <br>
+
+      <div class="row">
+      
+        <div class="col m12 s12 center">
+          <img src="images/icon_pdf.png">
+          <br>
+          To appear in SIGGRAPH 2022
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@article{lai2022face,
+    author    = {Lai, Wei-Sheng and Shih, YiChang and Chu, Lun-Cheng and Wu, Xiaotong and Tsai, Sung-Fang and Krainin, Michael and Sun, Deqing and Liang, Chia-Kai}, 
+    title     = {Face Deblurring using Dual Camera Fusion on Mobile Phones}, 
+    journal   = {ACM Transactions on Graphics (Proceedings of ACM SIGGRAPH)},
+    year      = {2022}
+}
+</pre>
+    </div>
+
+    <div class="row section scrollspy" id="supp">
+      <div class="title">Supplementary Materials</div>
+      <br>
+
+        <div class="section"><a href=supp/academic/index.html>Comparisons to academic works</a></div>
+        <div class="section"><a href=supp/commercial/index.html>Comparisons to commercial products</a></div>
+
+    </div>
+
 
   <footer class="page-footer grey lighten-3">
     
