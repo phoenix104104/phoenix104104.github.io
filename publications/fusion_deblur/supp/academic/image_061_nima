@@ -1,0 +1,10 @@
+BurstImageDeblurring: 1.069540
+DeblurGANv2: 2.311775
+MIMO-UNetPlus: 1.137304
+MPRNet: 1.096286
+PVDNet: 1.597871
+UHDVD: 1.153467
+UMSNFaceDeblurring: 1.594572
+ours: 4.794759
+reference: 3.214720
+source: 1.083963
