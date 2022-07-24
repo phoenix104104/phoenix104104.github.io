@@ -60,6 +60,7 @@
 
     <div class="row section scrollspy" id="abstract">
       <div class="title">Abstract</div>
+      <br>
 Motion blur of fast-moving subjects is a longstanding problem in photography and very common on mobile phones due to limited light collection efficiency, particularly in low-light conditions. While we have witnessed great progress in image deblurring in recent years, most methods require significant computational power and have limitations in processing high-resolution photos with severe local motions. To this end, we develop a novel face deblurring system based on the dual camera fusion technique for mobile phones. The system detects subject motion to dynamically enable a reference camera, e.g., ultrawide angle camera commonly available on recent premium phones, and captures an auxiliary photo with faster shutter settings. While the main shot is low noise but blurry, the reference shot is sharp but noisy. We learn ML models to align and fuse these two shots and output a clear photo without motion blur. Our algorithm runs efficiently on Google Pixel 6, which takes 463 ms overhead per shot. Our experiments demonstrate the advantage and robustness of our system against alternative single-image, multi-frame, face-specific, and video deblurring algorithms as well as commercial products. To the best of our knowledge, our work is the first mobile solution for face motion deblurring that works reliably and robustly over thousands of images in diverse motion and lighting conditions.
     </div>
 
@@ -67,22 +68,13 @@ Motion blur of fast-moving subjects is a longstanding problem in photography and
     <div class="row section scrollspy" id="paper">
       <div class="title">Paper</div>
       <br>
-
       <div class="row">
-      
-        <div class="col m12 s12 center">
-          <img src="images/icon_pdf.png">
-          <br>
-          To appear in SIGGRAPH 2022
+        <div class="col m12 s12">
+          <a href="https://dl.acm.org/doi/10.1145/3528223.3530131" target="blank">ACM TOG (SIGGRAPH 2022)</a>
         </div>
-
       </div>
-
     </div>
-
-
     <div class="row">
-      <div class="subtitle">Bibtex</div>
       <pre>
 @article{lai2022face,
     author    = {Lai, Wei-Sheng and Shih, YiChang and Chu, Lun-Cheng and Wu, Xiaotong and Tsai, Sung-Fang and Krainin, Michael and Sun, Deqing and Liang, Chia-Kai}, 
@@ -96,9 +88,84 @@ Motion blur of fast-moving subjects is a longstanding problem in photography and
     <div class="row section scrollspy" id="supp">
       <div class="title">Supplementary Materials</div>
       <br>
+      <table class="highlight">
+        <tbody>
+          <tr><td><a href="supp/academic">Comparisons to academic works</a></td></tr>
+          <tr><td><a href="supp/commercial">Comparisons to commercial products</a></td></tr>
+          <tr><td><a href="supp/full_resolution_results">Our dataset and full-resolution results</a></td></tr>
+          <tr><td><a href="supp/intermediate_results">Our intermediate results</a></td></tr>
+        </tbody>
+      </table>
+      
+      <!--<<div class="collection">
+        <a href="supp/academic" class="collection-item">Comparisons to academic works</a>
+        <a href="supp/commercial" class="collection-item">Comparisons to commercial products</a>
+        <a href="supp/full_resolution_results" class="collection-item">Our dataset and full-resolution results</a>
+        <a href="supp/intermediate_results" class="collection-item">Our intermediate results</a>
+      </div>
 
-        <div class="section"><a href=supp/academic/index.html>Comparisons to academic works</a></div>
-        <div class="section"><a href=supp/commercial/index.html>Comparisons to commercial products</a></div>
+        div class="row"><div class="col m12 s12"><a href=supp/academic>Comparisons to academic works</a></div></div>
+        <div class="row"><div class="col m12 s12"><a href=supp/commercial>Comparisons to commercial products</a></div></div>
+        <div class="row"><div class="col m12 s12"><a href=supp/full_resolution_results>Our dataset and full-resolution results</a></div></div>
+        <div class="row"><div class="col m12 s12"><a href=supp/intermediate_results>Our intermediate results</a></div></div>-->
+    </div>
+
+
+
+    <div class="row section scrollspy" id="press">
+      <div class="title">Press Coverage</div>
+      <br>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/6AUdTk84BtI" frameborder="0" allowfullscreen></iframe></div>
+                <span class="card-title"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/WNarpiGz3Kk?start=1896" frameborder="0" allowfullscreen></iframe></div>
+                <span class="card-title"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <table class="highlight">
+            <tbody>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.theverge.com%2F2021%2F8%2F2%2F22605094%2Fgoogle-pixel-6-pro-tensor-processor-specs-ai-ml&sa=D&sntz=1&usg=AOvVaw0Ky-AC7tyuV31rdffCLrWY">Verge</a></td>
+                <td>Now the Pixel 6 also has the ultrawide grab a fast, sharper image to capture that detail.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.wired.com%2Fstory%2Fgoogle-tensor-pixel-6-pro%2F&sa=D&sntz=1&usg=AOvVaw28g2RQmNvphkXSGw5ksJ3i">WIRED</a></td>
+                <td>The features of the child's face became clearer.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fgizmodo.com%2Fpixel-6-preview-heres-what-googles-first-smartphone-ch-1847395579&sa=D&sntz=1&usg=AOvVaw1Z1qQyC3hMBgrc8zwQq8xL">Gizmodo</a></td>
+                <td>Pixel 6 was able to convert the photo from one that might end up in the recycle bin to something you’d actually want to keep.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.androidpolice.com%2F2021%2F08%2F02%2Fthe-pixel-6-camera-will-try-to-magically-unblur-peoples-faces-in-your-photos%2F&sa=D&sntz=1&usg=AOvVaw3NSIbJzY0S0EGKTKZZ1nvf">Android Police</a></td>
+                <td>The Pixel 6 camera will try to magically unblur people's faces in your photos.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.androidheadlines.com%2F2021%2F08%2Fgoogle-pixel-6-pro-camera-facial-blur-images.html&sa=D&sntz=1&usg=AOvVaw1oGqTDs9g_PxaexeIRdzys">Android headline</a></td>
+                <td>The Pixel 6 and Pixel 6 Pro camera will try to fix facial blur in images.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.engadget.com%2Fgoogle-pixel-6-and-pixel-6-pro-review-specs-camera-samples-battery-test-160014200.html&sa=D&sntz=1&usg=AOvVaw2ewUnry8QwR0PgV2MfBPIx">Engadget</a></td>
+                <td>The tools that have a greater impact on your photos are Magic Eraser and Face Unblur, and despite some quirks they’re both quite effective.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
 
     </div>
 
