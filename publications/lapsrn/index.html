@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>LapSRN</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#network">Network</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  
+
+
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Networks</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></div>
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank">University of California, Merced</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://filebox.ece.vt.edu/~jbhuang/" target="blank">Jia-Bin Huang</a></div>
+          <div class="school"><a href="http://www.vt.edu/" target="blank">Virginia Tech</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="http://vision.ai.illinois.edu/ahuja.html" target="blank">Narendra Ahuja</a></div>
+          <div class="school"><a href="http://illinois.edu/" target="blank">University of Illinois, Urbana-Champaign</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a></div>
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank">University of California, Merced</a></div>
+        </h5>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+          <img class="responsive-img" src="images/emma_text.gif">
+        </div>
+        <div class="col s8 offset-s2 note">
+          (32x, 16x, 8x, 4x and 2x SR from a <span class="emphasis">single</span> SR model)
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Convolutional neural networks have recently demonstrated high-quality reconstruction for single image super-resolution.
+However, existing methods often require a large number of network parameters and entail heavy computational loads at runtime for generating high-accuracy super-resolution results.
+In this paper, we propose the deep Laplacian Pyramid Super-Resolution Network for fast and accurate image super-resolution.
+The proposed network progressively reconstructs the sub-band residuals of high-resolution images at multiple pyramid levels.
+In contrast to existing methods that involve the bicubic interpolation for pre-processing (which results in large feature maps), the proposed method directly extracts features from the low-resolution input space and thereby entails low computational loads.
+We train the proposed network with deep supervision using the robust Charbonnier loss functions and achieve high-quality image reconstruction.
+Furthermore, we utilize the recursive layers to share parameters across as well as within pyramid levels, and thus drastically reduce the number of parameters.
+Extensive quantitative and qualitative evaluations on benchmark datasets show that the proposed algorithm performs favorably against the state-of-the-art methods in terms of run-time and image quality.
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id='paper-thumbnail'>
+          <a href="papers/cvpr17_LapSRN.pdf" target="_blank">
+            <img class="responsive-img" src="images/thumbnail.jpg">
+          </a>
+          <div class="center-align subtitle">CVPR17</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    
+      <div class="col s12">
+        <div id='paper-thumbnail'>
+          <a href="http://arxiv.org/abs/1710.01992" target="_blank">
+            <img class="responsive-img" src="images/thumbnail_journal.jpg">
+          </a>
+        </div>
+        <div class="center-align subtitle">Journal extension</div>
+      </div>
+    </div>
+
+      <div class="row">
+      
+        <div class="col m3 s12 center">
+          <a href="http://arxiv.org/abs/1710.01992" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="http://arxiv.org/abs/1710.01992" target="_blank">Journal extension (arXiv)</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="papers/cvpr17_LapSRN.pdf" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="papers/cvpr17_LapSRN.pdf" target="_blank">CVPR17 (High-resolution)</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="https://arxiv.org/abs/1704.03915" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="https://arxiv.org/abs/1704.03915" target="_blank">CVPR17 (arXiv)</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="papers/cvpr17_LapSRN_supp.pdf" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="papers/cvpr17_LapSRN_supp.pdf" target="_blank">Supplementary Material</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang, "Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution", in IEEE Conference on Computer Vision and Pattern Recognition, 2017.</p>
+      
+      <p>Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang, "Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Networks", arXiv:1710.01992, 2017.</p>
+
+      <br>
+
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@inproceedings{LapSRN,
+    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Ahuja, Narendra and Yang, Ming-Hsuan}, 
+    title     = {Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution}, 
+    booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
+    year      = {2017}
+}
+@article{MSLapSRN,
+    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Ahuja, Narendra and Yang, Ming-Hsuan}, 
+    title     = {Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Networks}, 
+    journal   = {arXiv:1710.01992},
+    year      = {2017}
+}</pre>
+
+
+
+
+    </div>
+
+    <div class="section row scrollspy" id="download">
+      <div class="title">Download</div>
+      <div class="row">
+
+        <div class="col m12 s12 center">
+          <a href="https://github.com/phoenix104104/LapSRN" target="_blank">
+            <img src="images/github.png">
+          </a>
+          <br>
+          <a href="https://github.com/phoenix104104/LapSRN" target="_blank">Code (Github)</a>
+          <div>Include both LapSRN and MS-LapSRN</div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="section row scrollspy" id="network">
+      <div class="title">Network Architecture</div>
+      <br>
+      <div class="row center">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+          <img class="responsive-img" src="images/network.jpg">
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          <b>A+</b>: R. Timofte, V. De Smet, and L. Van Gool, “<a href="http://www.vision.ee.ethz.ch/~timofter/ACCV2014_ID820_SUPPLEMENTARY/" target="blank">A+: Adjusted anchored neighborhood regression for fast super-resolution</a>,” ACCV, 2014.
+        </li>
+        <li>&bull; 
+          <b>SRF</b>: S. Schulter, C. Leistner, and H. Bischof, “<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Schulter_Fast_and_Accurate_2015_CVPR_paper.html" target="blank">Fast and accurate image upscaling with super-resolution forests</a>,” CVPR, 2015.
+        </li>
+        <li>&bull; 
+          <b>SelfExSR</b>: J.-B. Huang, A. Singh, and N. Ahuja, “<a href="https://sites.google.com/site/jbhuang0604/publications/struct_sr" target="blank">Single image superresolution from transformed self-exemplars</a>,” CVPR, 2015.
+        </li>
+        <li>&bull; 
+          <b>SCN</b>: Z. Wang, D. Liu, J. Yang, W. Han, and T. Huang, “<a href="http://www.ifp.illinois.edu/~dingliu2/iccv15/" target="blank">Deep networks for image super-resolution with sparse prior</a>,” ICCV, 2015.
+        </li>
+        <li>&bull; 
+          <b>SRCNN</b>: C. Dong, C. C. Loy, K. He, and X. Tang, “<a href="http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html" target="blank">Image superresolution using deep convolutional networks</a>,” TPAMI, 2015.
+        </li>
+        <li>&bull; 
+          <b>VDSR</b>: J. Kim, J. K. Lee, and K. M. Lee, “<a href="http://cv.snu.ac.kr/research/VDSR/" target="blank">Accurate image superresolution using very deep convolutional networks</a>,” CVPR, 2016.
+        </li>
+        <li>&bull; 
+          <b>DRCN</b>: J. Kim, J. K. Lee, and K. M. Lee, “<a href="http://cv.snu.ac.kr/research/DRCN/" target="blank">Deeply-recursive convolutional network for image super-resolution</a>,” CVPR, 2016.
+        </li>
+        <li>&bull; 
+          <b>FSRCNN</b>: C. Dong, C. C. Loy, and X. Tang, “<a href="http://mmlab.ie.cuhk.edu.hk/projects/FSRCNN.html" target="blank">Accelerating the superresolution convolutional neural network</a>,” ECCV, 2016.
+        </li>
+        <li>&bull; 
+          <b>DRRN</b>: Y. Tai, J. Yang, and X. Liu, “<a href="http://cvlab.cse.msu.edu/project-super-resolution.html" target="blank">Image Super-Resolution via Deep Recursive Residual Network</a>,” CVPR, 2017.
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+    
+      <div class="row">
+        <div class="col l4 offset-l4 s12">
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=330&t=tt&d=My_ZQueEnf7OFryjSY9QX41FyPK5-CTzbK1DHS2J0Y4"></script>
+        </div>
+      </div>
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Jason Lai 2017
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

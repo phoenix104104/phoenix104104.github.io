@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>Video Stitching for Linear Camera Arrays</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+
+        
+      </div>
+    </nav>
+
+  </div>
+
+
+
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Video Stitching for Linear Camera Arrays</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></div>
+          <div class="school">UC Merced</div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://alumni.soe.ucsc.edu/~orazio/" target="blank">Orazio Gallo</a></div>
+          <div class="school">NVIDIA Research</div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://www.gujinwei.org/" target="blank">Jinwei Gu</a></div>
+          <div class="school">SenseTime Research</div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="https://scholar.google.com/citations?hl=en&user=t4rgICIAAAAJ&view_op=list_works&sortby=pubdate" target="blank">Deqing Sun</a></div>
+          <div class="school">Google</div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a></div>
+          <div class="school">UC Merced, Google</div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://jankautz.com/" target="blank">Jan Kautz</a></div>
+          <div class="school">NVIDIA Research</div>
+        </h5>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col offset-l1 l10 m12 s12">
+          <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/oIkZ4jCCaek" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Despite the long history of image and video stitching research, existing academic and commercial solutions still produce strong artifacts. In this work, we propose a wide-baseline video stitching algorithm for linear camera arrays that is temporally stable and tolerant to strong parallax. Our key insight is that stitching can be cast as a problem of learning a smooth spatial interpolation between the input videos. To solve this problem, inspired by pushbroom cameras, we introduce a fast pushbroom interpolation layer and propose a novel pushbroom stitching network, which learns a dense flow field to smoothly align the multiple input videos for spatial interpolation. Our approach outperforms the state-of-the-art by a significant margin, as we show with a user study, and has immediate applications in many areas such as virtual reality, immersive telepresence, autonomous driving, and video surveillance.
+    </div>
+
+    
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+
+      <div class="row">
+      
+        <div class="col offset-m2 m4 s12 center">
+          <a href="http://arxiv.org/abs/1907.13622" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="http://arxiv.org/abs/1907.13622" target="_blank">BMVC 2019</a>
+        </div>
+
+        <div class="col m4 s12 center">
+          <a href="bmvc19_video_stitching_supp.pdf" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="bmvc19_video_stitching_supp.pdf" target="_blank">Supplementary Material</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Wei-Sheng Lai, Orazio Gallo, Jinwei Gu, Deqing Sun, Ming-Hsuan Yang, and Jan Kautz, "Video Stitching for Linear Camera Arrays", in British Machine Vision Conference (BMVC), 2019</p>
+
+      <br>
+
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@inproceedings{lai2019video,
+    author    = {Lai, Wei-Sheng and Gallo, Orazio and Gu, Jinwei and Sun, Deqing and Yang, Ming-Hsuan and Kantz, Jan}, 
+    title     = {Video Stitching for Linear Camera Arrays}, 
+    booktitle = {BMVC},
+    year      = {2019}
+}
+</pre>
+    </div>
+
+
+    <!--
+    <div class="section row scrollspy" id="download">
+      <div class="title">Download</div>
+      <div class="row">
+
+        <div class="col m3 s12 center">
+          <a href="" target="_blank">
+            <img src="images/github.png">
+          </a>
+          <br>
+          <a href="" target="_blank">Code</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="results/all_flow_results.zip" target="_blank">
+            <img src="images/icon_zip.png">
+          </a>
+          <br>
+          <a href="results/all_flow_results.zip" target="_blank">Training and testing data (5.4 GB)</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="results/all_flow_results.zip" target="_blank">
+            <img src="images/icon_zip.png">
+          </a>
+          <br>
+          <a href="results/all_flow_results.zip" target="_blank">Videvo dataset (5.4 GB)</a>
+        </div>
+
+        <div class="col m3 s12 center">
+          <a href="results/all_flow_results.zip" target="_blank">
+            <img src="images/icon_zip.png">
+          </a>
+          <br>
+          <a href="results/all_flow_results.zip" target="_blank">Results (5.4 GB)</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="section row scrollspy" id="results">
+      <div class="title">Results</div>
+      
+      <div class="row center">
+        <div class="subtitle"><a href="results/style_transfer">Style Transfer</a></div>
+        <div class="col s12">
+          <a href="results/transfer"><img class="responsive-img" src="images/summary_transfer.jpg"></a>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row center">
+        <div class="subtitle"><a href="results/enhancement">Image Enhancement</a></div>
+        <div class="col s12">
+          <a href="results/enhancement"><img class="responsive-img" src="images/summary_enhancement.jpg"></a>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row center">
+        <div class="subtitle"><a href="results/colorization">Colorization</a></div>
+        <div class="col s12">
+          <a href="results/colorization"><img class="responsive-img" src="images/summary_colorization.jpg"></a>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row center">
+        <div class="subtitle"><a href="results/intrinsic">Intrinsic Decomposition</a></div>
+        <div class="col s12">
+          <a href="results/intrinsic"><img class="responsive-img" src="images/summary_intrinsic.jpg"></a>
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="subtitle"><a href="results/CycleGAN">Image-to-Image Translation</a></div>
+        <div class="col s12">
+          <a href="results/intrinsic"><img class="responsive-img" src="images/summary_cyclegan.jpg"></a>
+        </div>
+      </div>
+
+      <br>
+
+
+    </div>
+
+
+    -->
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          <a href="https://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W10/papers/Jiang_Video_Stitching_With_2015_CVPR_paper.pdf" target="blank">Video Stitching With Spatial-Temporal Content-Preserving Warping</a>, CVPR Workshops, 2015.
+        </li>
+        <li>&bull; 
+          <a href="http://www.kolor.com/" target="blank">AutoPano Video</a>.
+        </li>
+        <li>&bull; 
+          <a href="https://developer.nvidia.com/vrworks/vrworks-360video" target="blank">NVIDIA VRWorks</a>.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+    
+      <div class="row">
+        <div class="col l4 offset-l4 s12">
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=330&t=tt&d=IdagGq-8LtwiyuPf54lFdBR9SZMtYjTib2mc7EtvXa0"></script>
+        </div>
+      </div>
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Jason Lai 2019
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

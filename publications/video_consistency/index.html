@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>Blind Video Temporal Consistency</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+
+        
+      </div>
+    </nav>
+
+  </div>
+
+
+
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Real-Time Blind Video Temporal Consistency</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="https://www.wslai.net" target="blank">Wei-Sheng Lai</a></div>
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank">University of California, Merced</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="https://filebox.ece.vt.edu/~jbhuang/" target="blank">Jia-Bin Huang</a></div>
+          <div class="school"><a href="http://www.vt.edu/" target="blank">Virginia Tech</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://www.oliverwang.info/" target="blank">Oliver Wang</a></div>
+          <div class="school"><a href="https://research.adobe.com/" target="blank">Adobe Research</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="https://research.adobe.com/person/eli-shechtman/" target="blank">Eli Shechtman</a></div>
+          <div class="school"><a href="https://research.adobe.com/" target="blank">Adobe Research</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://www.meyumer.com/" target="blank">Ersin Yumer</a></div>
+          <div class="school"><a href="https://www.argo.ai/" target="blank">Argo AI</a></div>
+        </h5>
+
+        <h5 class="header col l2 m4 s12">
+          <div class="author"><a href="http://faculty.ucmerced.edu/mhyang/" target="blank">Ming-Hsuan Yang</a></div>
+          <div class="school"><a href="http://www.ucmerced.edu/" target="blank">University of California, Merced</a></div>
+        </h5>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col offset-l1 l10 m12 s12">
+          <!--<img class="responsive-img" src="images/teaser.gif">-->
+          <video class="responsive-video" autoplay loop controls>
+            <source src="images/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Applying image processing algorithms independently to each frame of a video often leads to undesired inconsistent results over time. 
+Developing temporally consistent video-based extensions, however, requires domain knowledge for individual tasks and is unable to generalize to other applications. 
+In this paper, we present an efficient end-to-end approach based on deep recurrent network for enforcing temporal consistency in a video.
+Our method takes the original unprocessed and per-frame processed videos as inputs to produce a temporally consistent video.
+Consequently, our approach is agnostic to specific image processing algorithms applied on the original video.
+We train the proposed network by minimizing both short-term and long-term temporal losses as well as the perceptual loss to strike a balance between temporal stability and perceptual similarity with the processed frames.
+At test time, our model does not require computing optical flow and thus achieves real-time speed even for high-resolution videos. 
+We show that our single model can handle multiple and unseen tasks, including but not limited to artistic style transfer, enhancement, colorization, image-to-image translation and intrinsic image decomposition.
+Extensive objective evaluation and subject study demonstrate that the proposed approach performs favorably against the state-of-the-art methods on various types of videos.
+    </div>
+
+    
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+
+      <div class="row">
+      
+        <div class="col m6 s12 center">
+          <a href="https://arxiv.org/abs/1808.00449" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="https://arxiv.org/abs/1808.00449" target="_blank">ECCV 2018</a>
+        </div>
+
+        <div class="col m6 s12 center">
+          <a href="ECCV18_video_consistency_supp.pdf" target="_blank">
+            <img src="images/icon_pdf.png">
+          </a>
+          <br>
+          <a href="ECCV18_video_consistency_supp.pdf" target="_blank">Supplementary Material</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="subtitle">Citation</div>
+      <p>Wei-Sheng Lai, Jia-Bin Huang, Oliver Wang, Eli Shechtman, Ersin Yumer, and Ming-Hsuan Yang, "Real-Time Blind Video Temporal Consistency", in European Conference on Computer Vision (ECCV), 2018</p>
+
+      <br>
+
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@inproceedings{Lai-ECCV-2018,
+    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Wang, Oliver and Shechtman, Eli and Yumer, Ersin and Yang, Ming-Hsuan}, 
+    title     = {Real-Time Blind Video Temporal Consistency}, 
+    booktitle = {European Conference on Computer Vision},
+    year      = {2018}
+}
+</pre>
+    </div>
+
+
+
+    <div class="section row scrollspy" id="download">
+      <div class="title">Download</div>
+      <div class="row">
+
+        <div class="col m12 s12 center">
+          <a href="" target="_blank">
+            <img src="images/github.png">
+          </a>
+          <br>
+          <a href="https://github.com/phoenix104104/fast_blind_video_consistency" target="_blank">Code</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          <a href="https://arxiv.org/abs/1504.06852" target="blank">FlowNet: Learning Optical Flow with Convolutional Networks</a>, ICCV, 2015.
+        </li>
+        <li>&bull; 
+          <a href="https://arxiv.org/abs/1612.01925" target="blank">FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks</a>, CVPR, 2017.
+        </li>
+        <li>&bull; 
+          <a href="https://sites.google.com/site/jbhuang0604/publications/struct_sr" target="blank">Optical Flow Estimation using a Spatial Pyramid Network</a>, CVPR, 2017.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+      <!--
+      <div class="row">
+        <div class="col l4 offset-l4 s12">
+          <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=330&t=tt&d=fhGpuMgoLYXytRWhcIV-396rCSmJYtpAJdk3tTNbAnY"></script>
+        </div>
+      </div>
+    -->
+    
+    <div class="footer-copyright center black-text">
+      Copyright © Jason Lai 2017
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="colorline-deblur">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="jasonlai">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/mfp.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Blur Kernel Estimation Using Normalized Color-line Priors</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 paper-title">Blur Kernel Estimation Using Normalized Color-line Priors</div>
+    </div>
+    <br>
+    <div class="row author-section">
+      <div class="col-md-2 col-md-offset-2 col-sm-6 col-xs-6 author">
+        <a href="https://www.wslai.net/" target="blank">
+        Wei-Sheng Lai
+        </a>
+        <sup>1</sup>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-6 author">
+        <a href="http://disp.ee.ntu.edu.tw/prof.php" target="blank">
+        Jian-Jiun Ding
+        </a>
+        <sup>1</sup>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-6 author">
+        <a href="https://sites.google.com/site/yylinweb/" target="blank">
+        Yen-Yu Lin
+        </a>
+        <sup>2</sup>
+      </div>
+      <div class="col-md-2 col-xs-6 col-sm-6 author">
+        <a href="http://www.csie.ntu.edu.tw/~cyy/" target="blank">
+        Yung-Yu Chuang
+        </a>
+        <sup>1</sup>
+      </div>
+    </div>
+    
+    <br>
+
+    <div class="row school-section">
+      <div class="col-md-3 col-md-offset-3 school">
+        <sup>1</sup><a href="http://www.ntu.edu.tw/" target="blank">National Taiwan University</a>
+      </div>
+      <div class="col-md-3 school">
+        <sup>2</sup><a href="http://www.citi.sinica.edu.tw/" target="blank">Academia Sinica</a>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <img src="images/teaser.png" class="img-responsive" >
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subtitle">Abstract</div>
+        <div class="content">
+          This paper proposes a single-image blur kernel estimation algorithm that utilizes the normalized color-line prior to restore sharp edges without altering edge structures or enhancing noise. The proposed prior is derived from the color-line model, which has been successfully applied to non-blind deconvolution and many computer vision problems. In this paper, we show that the original color-line prior is not effective for blur kernel estimation and propose a normalized color-line prior which can better enhance edge contrasts. By optimizing the proposed prior, our method gradually enhances the sharpness of the intermediate patches without using heuristic filters or external patch priors. The intermediate patches can then guide the estimation of the blur kernel. A comprehensive evaluation on a large image deblurring dataset shows that our algorithm achieves the state-of-the-art results.
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subtitle">Paper</div>
+        <div id='paper-thumbnail1'>
+          <a href="http://www.csie.ntu.edu.tw/~cyy/publications/papers/Lai2015BKE.pdf" target="_blank"><img class="img-responsive"></a>
+        </div>
+        <div id='paper-thumbnail2'>
+          <a href="http://www.csie.ntu.edu.tw/~cyy/publications/papers/Lai2015BKE.pdf" target="_blank"><img class="img-responsive"></a>
+        </div>
+        <br>
+        <br>
+        <div class="content">
+          <img src="images/icon_pdf.png"> <a href="http://www.csie.ntu.edu.tw/~cyy/publications/papers/Lai2015BKE.pdf" target="_blank">CVPR 2015 paper</a> (10 MB)
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subtitle">Supplementary Material</div>
+        <div class="content">
+          <img src="images/icon_pdf.png"> <a href="https://www.wslai.net/publications/colorline_deblur/colorline_deblur_cvpr2015_extend_abstract.pdf" target="_blank">Extended abstract</a> (0.25MB)
+        </div>
+        <div class="content">
+          <img src="images/icon_pdf.png"> <a href="https://www.wslai.net/publications/colorline_deblur/colorline_deblur_cvpr2015_supplementary.pdf" target="_blank">Supplementary material</a> (3.9MB)
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subtitle">Citation</div>
+        <div class="content">
+          Wei-Sheng Lai, Jian-Jiun Ding, Yen-Yu Lin, and Yung-Yu Chuang. "Blur Kernel Estimation Using Normalized Color-line Priors." In Proceedings of IEEE Computer Vision and Pattern Recognition (CVPR 2015), June 2015.
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subtitle">Bibtex</div>
+        <pre>
+@INPROCEEDINGS{colorline_deblur_cvpr2015,
+    AUTHOR    = {Wei-Sheng Lai, Jian-Jiun Ding, Yen-Yu Lin, and Yung-Yu Chuang}, 
+    TITLE     = {Blur Kernel Estimation Using Normalized Color-line Priors}, 
+    YEAR      = {2015},
+    MONTH     = {June},
+    BOOKTITLE = {Proceedings of IEEE Conferene on Computer Vision and Pattern Recognition (CVPR 2015)},
+    PAGES     = {to appear}
+}</pre>
+      </div>
+    </div>
+
+    <br>
+    <a href="#" class="scrollToTop"></a>
+    <div class="row">
+      <div class="col-md-12 subtitle">Deblurred Results</div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_blur.png"><img src="images/real/postcard_blur.png" class="img-responsive"></a>
+        Blurry Image
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_fast_motion_deblur_EPLL.png"><img src="images/real/postcard_fast_motion_deblur_EPLL.png" class="img-responsive"></a>
+        Cho and Lee
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_two_phase_EPLL.png"><img src="images/real/postcard_two_phase_EPLL.png" class="img-responsive"></a>
+        Xu and Jia
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_normalize_L12_EPLL.png"><img src="images/real/postcard_normalize_L12_EPLL.png" class="img-responsive"></a>
+        Krishnan et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_marginal_EPLL.png"><img src="images/real/postcard_marginal_EPLL.png" class="img-responsive"></a>
+        Levin et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_patch_deblur_EPLL.png"><img src="images/real/postcard_patch_deblur_EPLL.png" class="img-responsive"></a>
+        Sun et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_patch_recurr_EPLL.png"><img src="images/real/postcard_patch_recurr_EPLL.png" class="img-responsive"></a>
+        Michaeli and Irani
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/postcard_our_EPLL.png"><img src="images/real/postcard_our_EPLL.png" class="img-responsive"></a>
+        Ours
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_blur.png"><img src="images/real/summerhouse_blur.png" class="img-responsive"></a>
+        Blurry Image
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_fast_motion_deblur_EPLL.png"><img src="images/real/summerhouse_fast_motion_deblur_EPLL.png" class="img-responsive"></a>
+        Cho and Lee
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_two_phase_EPLL.png"><img src="images/real/summerhouse_two_phase_EPLL.png" class="img-responsive"></a>
+        Xu and Jia
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_normalize_L12_EPLL.png"><img src="images/real/summerhouse_normalize_L12_EPLL.png" class="img-responsive"></a>
+        Krishnan et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_marginal_EPLL.png"><img src="images/real/summerhouse_marginal_EPLL.png" class="img-responsive"></a>
+        Levin et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_patch_deblur_EPLL.png"><img src="images/real/summerhouse_patch_deblur_EPLL.png" class="img-responsive"></a>
+        Sun et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_patch_recurr_EPLL.png"><img src="images/real/summerhouse_patch_recurr_EPLL.png" class="img-responsive"></a>
+        Michaeli and Irani
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/summerhouse_our_EPLL.png"><img src="images/real/summerhouse_our_EPLL.png" class="img-responsive"></a>
+        Ours
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_blur.png"><img src="images/real/toy_blur.png" class="img-responsive"></a>
+        Blurry Image
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_fast_motion_deblur_EPLL.png"><img src="images/real/toy_fast_motion_deblur_EPLL.png" class="img-responsive"></a>
+        Cho and Lee
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_two_phase_EPLL.png"><img src="images/real/toy_two_phase_EPLL.png" class="img-responsive"></a>
+        Xu and Jia
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_normalize_L12_EPLL.png"><img src="images/real/toy_normalize_L12_EPLL.png" class="img-responsive"></a>
+        Krishnan et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_marginal_EPLL.png"><img src="images/real/toy_marginal_EPLL.png" class="img-responsive"></a>
+        Levin et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_patch_deblur_EPLL.png"><img src="images/real/toy_patch_deblur_EPLL.png" class="img-responsive"></a>
+        Sun et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_patch_recurr_EPLL.png"><img src="images/real/toy_patch_recurr_EPLL.png" class="img-responsive"></a>
+        Michaeli and Irani
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/toy_our_EPLL.png"><img src="images/real/toy_our_EPLL.png" class="img-responsive"></a>
+        Ours
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_blur.png"><img src="images/real/building_blur.png" class="img-responsive"></a>
+        Blurry Image
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_fast_motion_deblur_EPLL.png"><img src="images/real/building_fast_motion_deblur_EPLL.png" class="img-responsive"></a>
+        Cho and Lee
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_two_phase_EPLL.png"><img src="images/real/building_two_phase_EPLL.png" class="img-responsive"></a>
+        Xu and Jia
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_normalize_L12_EPLL.png"><img src="images/real/building_normalize_L12_EPLL.png" class="img-responsive"></a>
+        Krishnan et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_marginal_EPLL.png"><img src="images/real/building_marginal_EPLL.png" class="img-responsive"></a>
+        Levin et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_patch_deblur_EPLL.png"><img src="images/real/building_patch_deblur_EPLL.png" class="img-responsive"></a>
+        Sun et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_patch_recurr_EPLL.png"><img src="images/real/building_patch_recurr_EPLL.png" class="img-responsive"></a>
+        Michaeli and Irani
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/building_our_EPLL.png"><img src="images/real/building_our_EPLL.png" class="img-responsive"></a>
+        Ours
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_blur.png"><img src="images/real/pietro_blur.png" class="img-responsive"></a>
+        Blurry Image
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_fast_motion_deblur_EPLL.png"><img src="images/real/pietro_fast_motion_deblur_EPLL.png" class="img-responsive"></a>
+        Cho and Lee
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_two_phase_EPLL.png"><img src="images/real/pietro_two_phase_EPLL.png" class="img-responsive"></a>
+        Xu and Jia
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_normalize_L12_EPLL.png"><img src="images/real/pietro_normalize_L12_EPLL.png" class="img-responsive"></a>
+        Krishnan et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_marginal_EPLL.png"><img src="images/real/pietro_marginal_EPLL.png" class="img-responsive"></a>
+        Levin et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_patch_deblur_EPLL.png"><img src="images/real/pietro_patch_deblur_EPLL.png" class="img-responsive"></a>
+        Sun et al.
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_patch_recurr_EPLL.png"><img src="images/real/pietro_patch_recurr_EPLL.png" class="img-responsive"></a>
+        Michaeli and Irani
+      </div>
+      <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 result-images">
+        <a class="image-popup-no-margins" href="images/real/pietro_our_EPLL.png"><img src="images/real/pietro_our_EPLL.png" class="img-responsive"></a>
+        Ours
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="subtitle">Reference</div>
+        <div class="content">
+          <ul>
+            <li>S. Cho and S. Lee. “Fast motion deblurring”, SIGGRAPH Asia 2009.</li>
+            <li>L. Xu and J. Jia. “Two-Phase Kernel Estimation for Robust Motion Deblurring”, ECCV 2010.</li>
+            <li>D. Krishnan, T. Tay and R. Fergus. “Blind Deconvolution using a Normalized Sparsity Measure”, CVPR 2011.</li>
+            <li>A. Levin, Y. Weiss, F. Durand, W. T. Freeman. "Efficient Marginal Likelihood Optimization in Blind Deconvolution", CVPR 2011.</li>
+            <li>L. Sun, S. Cho, J. Wang, and J. Hays. "Edge-based Blur Kernel Estimation Using Patch Priors", ICCP 2013.</li>
+            <li>T. Michaeli and M. Irani. "Blind Deblurring Using Internal Patch Recurrence", ECCV 2014.</li>
+            <li>N. Joshi, C. L. Zitnick, R. Szeliski, D. Kriegman. "Image Deblurring and Denoising using Color Priors", CVPR 2009.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+  </div> <!-- end of container -->
+
+  <div class="footer">
+    <div class="container">
+      Copyright © Jason Lai
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/mfp.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45156688-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>
+
+
+</html
